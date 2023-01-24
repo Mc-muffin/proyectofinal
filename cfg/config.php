@@ -5,4 +5,4 @@ const DB_NAME = "taller_final";
 const DB_USER = "root";
 const DB_PASS = "";
 const DB_CSET = "utf8";
-const BASE_URL = "http://localhost/copycat";
+const BASE_URL = "http://localhost/final";

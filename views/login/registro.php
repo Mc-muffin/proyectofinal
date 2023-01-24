@@ -26,9 +26,9 @@
     <label class="form-group">Apellidos:</label>
     <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
     <label class="form-group">Usuario:</label>
-    <input class="controls" type="text" name="usuario" id="usuario" placeholder="Ingresar usuario">
+    <input class="controls" type="text" name="username" id="usuario" placeholder="Ingresar usuario">
     <label class="form-group">Contraseña:</label>
-    <input class="controls" type="password" name="contraseña" id="password" placeholder="Ingresar contraseña">
+    <input class="controls" type="password" name="password" id="password" placeholder="Ingresar contraseña">
     <label class="form-group">Tipo de usuario:</label>
     <select class="controls" id="tipo_id" name="select" placeholder="Seleccione...">
       <option value="" selected disabled hidden>Seleccione...</option>
@@ -41,44 +41,6 @@
   <a class="botons narrow red" href="<?php print BASE_URL; ?>/index.php">Regresar</a>
   <p><a href="#">¿Ya tiene Cuenta?</a></p>
 </section>
-<!-- 
-<form name="formulario" id="formulario" method="POST">
-  <div class="container p-4">
-    <div class="row">
-      <div class="col-md-5 mx-auto">
-        <div class="card card-body">
-          <div class="form-group">
-            <label class="form-group">Username</label>
-            <input type="text" id="txtUsername" name="username" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label class="form-group">Contraseña</label>
-            <input type="password" id="txtContraseña" name="passwordd" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label class="form-group">Nombre</label>
-            <input type="text" id="txtNombre" name="nombres" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label class="form-group">Apellido</label>
-            <input type="text" id="txtApellidos" name="apellidos" class="form-control" required>
-          </div>
-
-          <div class="form-group">
-            <label class="form-group">Tipo de Usuario</label>
-            <input type="number" id="txtTipo_id" name="tipo_id" class="form-control" required>
-          </div>
-
-          <div class="form-group">
-            <a href="<?php print BASE_URL; ?>/indexlg.php">Regresar</a>
-          </div>
-
-          <input type="submit" name="register" id="guardar" class="btn btn-success btn-block" value="guardar">
-        </div>
-      </div>
-    </div>
-  </div>
-</form> -->
 <?php include "footer.php"; ?>
 
-<script src="../template/js/guardar_usuario.js"></script>
+<script src="../template/js/registerUser.js"></script>

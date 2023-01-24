@@ -16,9 +16,9 @@ $tipo_id = getPostWithDefault("tipo_id");
 switch ($_REQUEST["op"]) {
 
     case "create":
-        $erros = doValidate();
+        $errors = doValidate();
 
-        if (count($errors) != 0) {
+        if (count($errors) == 0) {
             $data = $usuario->create(
                 $username,
                 $password,
@@ -47,6 +47,7 @@ switch ($_REQUEST["op"]) {
                     "errors" => $errors
                 )
             );
+            http_response_code(400); // Set BAD_REQUEST response code
         }
 
         break;
@@ -62,6 +63,7 @@ switch ($_REQUEST["op"]) {
         break;
 
     case "update":
+        $errors = doValidate();
         $datos = $usuario->update(
             $id,
             $username,
